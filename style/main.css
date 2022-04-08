@@ -1,0 +1,124 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body{
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .logo{
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+
+/* elementos da serie principal */
+
+.serie-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/pb-bg.jpg');
+
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.serie-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.botao a{
+    font-family: 'Arial', Times, serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao a:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.serie-principal .container{
+    width: 80%;
+}
+
+.box-serie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-series{
+    margin-top: 8px;
+}
